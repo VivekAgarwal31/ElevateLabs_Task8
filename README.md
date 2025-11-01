@@ -75,7 +75,7 @@ This exercise focuses on understanding **encryption, tunneling, and anonymity** 
 ## 📁 Deliverables
 - `VPN_Setup_Report.pdf` — Detailed analysis and screenshots.  
 - `README.md` — Summarized documentation of process and findings.  
-- `Wireshark_Capture.pcapng` — Packet capture evidence.  
+- `Screenshots/` — Packet capture evidence.  
 
 ---
 
