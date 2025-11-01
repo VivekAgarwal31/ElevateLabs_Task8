@@ -1,0 +1,92 @@
+# 🛡️ VPN Setup, Encryption, and Privacy Report 
+
+## 📘 Objective
+
+To explore how Virtual Private Networks (VPNs) secure user communication, understand their encryption and privacy mechanisms, and evaluate their impact on internet performance.
+
+---
+
+## 🧰 Tools Used
+
+* **VPN Client:** ProtonVPN (Free Tier)
+* **Verification Tools:**
+
+  * [WhatIsMyIPAddress](https://whatismyipaddress.com)
+  * [Google Internet Speed Test](https://www.google.com/search?q=speedtest)
+* **System Used:** Windows 11
+
+---
+
+## ⚙️ Steps Performed
+
+1️⃣ **Created an account** on [ProtonVPN](https://protonvpn.com/signup) using the Free Tier.
+2️⃣ **Installed** the ProtonVPN Windows client.
+3️⃣ **Connected** to a VPN server located in **Tokyo (Japan)** via Quick Connect.
+4️⃣ **Verified IP change** using [WhatIsMyIPAddress](https://whatismyipaddress.com).
+5️⃣ **Measured internet speed** before and after enabling VPN.
+
+---
+
+## 🌐 IP and Speed Verification
+
+| Condition   | Server Location | Download (Mbps) | Upload (Mbps)  | Latency |
+| ----------- | --------------- | --------------- | -------------- | ------- |
+| Without VPN | New Delhi       | **130.8 Mbps**  | **127.5 Mbps** | 50 ms   |
+| With VPN    | Tokyo           | **74.8 Mbps**   | **4.78 Mbps**  | 2 ms    |
+
+✅ **Result:** VPN successfully changed IP location and encrypted traffic, though performance dropped slightly.
+
+---
+
+## 🔐 VPN Encryption and Privacy Features
+
+VPNs use a combination of **encryption algorithms, tunneling protocols, and authentication mechanisms** to ensure data confidentiality and integrity.
+
+### 1️⃣ Encryption
+
+* **AES-256 Encryption:** Most VPNs, including ProtonVPN, use Advanced Encryption Standard (AES-256 bit) — a military-grade cipher that’s nearly impossible to brute-force.
+* **Key Exchange (RSA-4096):** Secures session keys used for encryption.
+* **HMAC Authentication:** Ensures data packets aren’t modified during transmission.
+
+### 2️⃣ Tunneling Protocols
+
+VPNs use secure channels to transmit data:
+
+* **OpenVPN:** Reliable and open-source; balances speed and security.
+* **WireGuard:** Lightweight and faster, uses modern cryptographic primitives.
+* **IKEv2/IPSec:** Known for stability, especially during mobile switching (Wi-Fi ↔ mobile data).
+
+### 3️⃣ Privacy Protections
+
+* **IP Masking:** Replaces your real IP with the VPN server’s IP, hiding your identity and location.
+* **No-Logs Policy:** Trusted VPNs (like ProtonVPN) claim not to store user activity or connection data.
+* **DNS and IPv6 Leak Protection:** Prevents accidental exposure of real DNS requests or IP addresses.
+* **Kill Switch:** Automatically disconnects internet access if the VPN connection drops — ensuring no unprotected data leaks.
+
+---
+
+## 🧩 Summary — VPN Benefits and Limitations
+
+### ✅ **Benefits**
+
+1. **Data Encryption:** All transmitted information is encrypted, preventing snooping by ISPs or attackers.
+2. **IP Masking:** Protects user identity by hiding the real location and IP.
+3. **Safe Public Wi-Fi:** Prevents data theft on unsecured networks like airports or cafes.
+4. **Geo-Unblocking:** Allows access to restricted websites or region-locked content.
+5. **Improved Privacy:** Shields browsing activities from government or corporate tracking.
+
+### ⚠️ **Limitations**
+
+1. **Reduced Speed:** Encryption and routing through remote servers can slow down connections.
+2. **Limited Free Servers:** Free VPN plans often restrict available servers and speed.
+3. **Potential Logging:** Some providers might store metadata, reducing anonymity.
+4. **Not Full Anonymity:** VPN hides IPs but doesn’t make you completely anonymous (especially if logged into accounts).
+5. **Blocked by Some Websites:** Streaming or corporate services may block known VPN IPs.
+
+---
+
+## 🧾 Overall Summary
+
+This experiment demonstrated that VPNs are powerful privacy tools that encrypt internet traffic, conceal IP addresses, and protect user data from interception. ProtonVPN successfully established a secure tunnel between the client and Tokyo server, changing the IP address and encrypting all communication. The minor reduction in network speed was an expected trade-off for enhanced privacy and security.
+
+Overall, VPNs are highly effective for **data protection and private browsing**, though users should understand their **technical limits** and choose trusted providers for maximum safety.
